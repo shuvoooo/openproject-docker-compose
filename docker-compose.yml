@@ -76,6 +76,10 @@ services:
       timeout: 3s
       retries: 3
       start_period: 30s
+    
+    expose:
+      - 80
+
 
   autoheal:
     image: willfarrell/autoheal:1.2.0
